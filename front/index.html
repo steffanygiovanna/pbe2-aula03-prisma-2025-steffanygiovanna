@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SNOOPY PetShop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>SNOOPY PetShop</h1>
+        <button onclick="cadastro.classList.remove('oculto')">Novo produto</button>
+        <button onclick="cadastro.classList.remove('oculto')">Novo cliente</button>
+    </header>
+    <main>
+       
+    </main>
+    <footer>
+        <h2>By: Teffy</h2>
+    </footer>
+    <div id="cadastro" class="modal oculto">
+        <div class="janela">
+            <div>
+                <h3>Cadastro</h3>
+                <button  onclick="window.location.reload()">X</button>
+            </div>
+            <form>
+                <input type="text" name="produto" placeholder="Nome do produto" required>
+                <input type="text" name="produto" placeholder="Descrição" required>
+                <input type="Number" step="0.01" name="Preco" placeholder="Preço" required>
+                <input type="text" name="Imagem" placeholder="Cole o endereço da imagem" required>
+                <button type="submit">Cadastrar</button>
+            </form>
+
+            <form>
+                <input type="text" name="Nome" placeholder="Nome do cliente" required>
+                <input type="int" name="cpf" placeholder="Insira seu CPF" required>
+                <input type="Number" step="19" name="Telefone" placeholder="Telefone" required>
+                <input type="text" name="Imagem" placeholder="Cole o endereço da imagem" required>
+                <button type="submit">Cadastrar</button>
+            </form>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>
